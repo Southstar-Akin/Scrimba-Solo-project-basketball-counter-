@@ -60,6 +60,7 @@ div.skeleton{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 40px;
+    text-shadow: -3px 2px black;
 }
 .score{
     width: 155px;
