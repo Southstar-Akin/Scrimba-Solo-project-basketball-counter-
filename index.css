@@ -1,0 +1,152 @@
+@font-face {
+    font-family: 'Cursed';
+    src: url(./fonts/CursedTimerUlil-Aznm.ttf);
+}
+@font-face {
+    font-family: 'VideoFreak';
+    src: url(./fonts/VIDEOPHREAK.ttf);
+}
+
+*{
+margin: 0;
+padding: 0;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: grid;
+    background-color: #4f772d;
+    grid-auto-flow: column;
+}
+div.container{
+    height: 100vh;
+    width: 73vw;
+    display: grid;
+}
+
+span.logo{
+    display: grid;
+    place-self: start;
+    margin: 30px 0px 0px 30px;
+    grid-auto-flow: column;
+    column-gap: 20px;
+    align-items: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: #132a13;
+}
+
+div.shell{
+    align-self: center;
+    justify-self: end;
+    background-color: #132a13 ;
+    display: inherit;
+    width: 50vw;
+    height: 450px;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+div.skeleton{
+    height: 260px;
+    width: 160px;
+    display: inherit;
+    row-gap: 21px;
+    justify-items: center;
+    color: white;
+}
+
+.main{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 40px;
+}
+.score{
+    width: 155px;
+    height: 120px;
+    background-color: #6d6875;
+    font-weight: 400;
+    font-size: 90px;
+    font-family: 'Cursed';
+    display: inherit;
+    place-content: center;
+    color: #fff;
+    text-shadow: -1px -1px 4px #6f1d1b;
+}
+.butts button{
+    background-color: transparent;
+    font-family: 'Cursed';
+    width: 45px;
+    border: 1px solid #fff;
+    height: 45px;
+    border-radius: 5px;
+    box-shadow: -2px 3px rgb(85, 128, 22);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+    color: #fff;
+}
+
+.base{
+    display: grid;
+    grid-column: 1/-1;
+}
+.new-But{
+    padding: 24px 72px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 5px rgb(85, 128, 22);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.77, 0, 0.175, 1);
+
+}
+:is(.new-But, .butts button):active{
+    transform: scale(0.7);
+}
+.new-But a {
+    font-family: inherit;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'VideoFreak';
+    font-size: large;
+    text-decoration: none;
+}
+div.timer{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    height: fit-content;
+    align-self: center;
+    row-gap: 30px;
+    /* align-items: center; */
+}
+div.timer span.time{
+    font-size: 50px;
+    font-weight: 700;
+    color: #132a13;
+    text-transform: uppercase;
+    display: grid;
+    align-self: end;
+    text-align: center;
+    letter-spacing: 2px;
+}
+div.cont{
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+    row-gap: 30px;
+}
+span.box{
+    height: 120px;
+    width: 155px;
+    background-color: black;
+    color: #629238;
+    font-size: 90px;
+    font-family: 'Cursed';
+    display: grid;
+    place-content: center;
+}
+
+.borders{
+    border: 1px dashed white;
+}
